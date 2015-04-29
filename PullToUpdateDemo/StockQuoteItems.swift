@@ -1,6 +1,5 @@
 //
 //  StockQuoteItems.swift
-//  PullToUpdateDemo
 //
 //  Created by Christina Moulton on 2015-04-29.
 //  Copyright (c) 2015 Teak Mobile Inc. All rights reserved.
@@ -100,6 +99,35 @@ extension Alamofire.Request {
   func responseItemsArray(completionHandler: (NSURLRequest, NSHTTPURLResponse?, Array<StockQuoteItem>?, NSError?) -> Void) -> Self {
     return response(serializer: Request.itemsArrayResponseSerializer(), completionHandler: { (request, response, itemsArray, error) in
       completionHandler(request, response, itemsArray as? Array<StockQuoteItem>, error)
+    })
+  }
+}
+
+class QuoteUpdater {
+  class func updateNotificationName() -> String {
+    return "UpdatedQuotes";
+  }
+  
+  var timer:NSTimer?
+  let INTERVAL_SECONDS = 1.0
+  required init() {
+    self.timer = nil // Swift requires values to be set before doing anything else with self in init, so we can't set the target in the next line without this one first
+    self.timer = NSTimer.scheduledTimerWithTimeInterval(INTERVAL_SECONDS, target: self, selector: "getUpdatedQuotes:", userInfo: nil, repeats: true)
+    
+    self.getUpdatedQuotes(nil) // do it right away
+  }
+  
+  dynamic func getUpdatedQuotes(timer: NSTimer!) {
+    StockQuoteItem.getFeedItems({ (items, error) in
+      if error != nil
+      {
+        // TODO: add error handling
+      }
+      else
+      {
+        let notification = NSNotification(name: QuoteUpdater.updateNotificationName(), object: items)
+        NSNotificationCenter.defaultCenter().postNotification(notification)
+      }
     })
   }
 }

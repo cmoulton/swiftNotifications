@@ -13,34 +13,20 @@
 		CF0C93A21AF11B710035D7A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0C93A01AF11B710035D7A3 /* Main.storyboard */; };
 		CF0C93A41AF11B710035D7A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF0C93A31AF11B710035D7A3 /* Images.xcassets */; };
 		CF0C93A71AF11B710035D7A3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0C93A51AF11B710035D7A3 /* LaunchScreen.xib */; };
-		CF0C93B31AF11B710035D7A3 /* PullToUpdateDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0C93B21AF11B710035D7A3 /* PullToUpdateDemoTests.swift */; };
-		CF0C93C11AF122190035D7A3 /* CurrencyItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0C93C01AF122190035D7A3 /* CurrencyItems.swift */; };
+		CF0C93C11AF122190035D7A3 /* StockQuoteItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0C93C01AF122190035D7A3 /* StockQuoteItems.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CF0C93AD1AF11B710035D7A3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CF0C938F1AF11B710035D7A3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CF0C93961AF11B710035D7A3;
-			remoteInfo = PullToUpdateDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A486D3363D77F313FE7E94C3 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B40F9D169E9F27413AA2A3F3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		CF0C93971AF11B710035D7A3 /* PullToUpdateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PullToUpdateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF0C93971AF11B710035D7A3 /* SwiftNotificationsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNotificationsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF0C939B1AF11B710035D7A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF0C939C1AF11B710035D7A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF0C939E1AF11B710035D7A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF0C93A11AF11B710035D7A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF0C93A31AF11B710035D7A3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CF0C93A61AF11B710035D7A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		CF0C93AC1AF11B710035D7A3 /* PullToUpdateDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PullToUpdateDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF0C93B11AF11B710035D7A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF0C93B21AF11B710035D7A3 /* PullToUpdateDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToUpdateDemoTests.swift; sourceTree = "<group>"; };
-		CF0C93C01AF122190035D7A3 /* CurrencyItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyItems.swift; sourceTree = "<group>"; };
+		CF0C93C01AF122190035D7A3 /* StockQuoteItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockQuoteItems.swift; sourceTree = "<group>"; };
 		DF0DE2825294FF01C28D80E0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,13 +36,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F8A6EDBE150E25C21DD490E /* Pods.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CF0C93A91AF11B710035D7A3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				CF0C93991AF11B710035D7A3 /* PullToUpdateDemo */,
-				CF0C93AF1AF11B710035D7A3 /* PullToUpdateDemoTests */,
 				CF0C93981AF11B710035D7A3 /* Products */,
 				F719D6FB9771A8E79B7CAD6E /* Pods */,
 				19693AB17627130A76F403D6 /* Frameworks */,
@@ -85,8 +63,7 @@
 		CF0C93981AF11B710035D7A3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CF0C93971AF11B710035D7A3 /* PullToUpdateDemo.app */,
-				CF0C93AC1AF11B710035D7A3 /* PullToUpdateDemoTests.xctest */,
+				CF0C93971AF11B710035D7A3 /* SwiftNotificationsDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,7 +73,7 @@
 			children = (
 				CF0C939C1AF11B710035D7A3 /* AppDelegate.swift */,
 				CF0C939E1AF11B710035D7A3 /* ViewController.swift */,
-				CF0C93C01AF122190035D7A3 /* CurrencyItems.swift */,
+				CF0C93C01AF122190035D7A3 /* StockQuoteItems.swift */,
 				CF0C93A01AF11B710035D7A3 /* Main.storyboard */,
 				CF0C93A31AF11B710035D7A3 /* Images.xcassets */,
 				CF0C93A51AF11B710035D7A3 /* LaunchScreen.xib */,
@@ -113,23 +90,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CF0C93AF1AF11B710035D7A3 /* PullToUpdateDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				CF0C93B21AF11B710035D7A3 /* PullToUpdateDemoTests.swift */,
-				CF0C93B01AF11B710035D7A3 /* Supporting Files */,
-			);
-			path = PullToUpdateDemoTests;
-			sourceTree = "<group>";
-		};
-		CF0C93B01AF11B710035D7A3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CF0C93B11AF11B710035D7A3 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		F719D6FB9771A8E79B7CAD6E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,9 +102,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CF0C93961AF11B710035D7A3 /* PullToUpdateDemo */ = {
+		CF0C93961AF11B710035D7A3 /* SwiftNotificationsDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CF0C93B61AF11B710035D7A3 /* Build configuration list for PBXNativeTarget "PullToUpdateDemo" */;
+			buildConfigurationList = CF0C93B61AF11B710035D7A3 /* Build configuration list for PBXNativeTarget "SwiftNotificationsDemo" */;
 			buildPhases = (
 				2FA21D5C2A79943573A43D9C /* Check Pods Manifest.lock */,
 				CF0C93931AF11B710035D7A3 /* Sources */,
@@ -157,28 +117,10 @@
 			);
 			dependencies = (
 			);
-			name = PullToUpdateDemo;
+			name = SwiftNotificationsDemo;
 			productName = PullToUpdateDemo;
-			productReference = CF0C93971AF11B710035D7A3 /* PullToUpdateDemo.app */;
+			productReference = CF0C93971AF11B710035D7A3 /* SwiftNotificationsDemo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		CF0C93AB1AF11B710035D7A3 /* PullToUpdateDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CF0C93B91AF11B710035D7A3 /* Build configuration list for PBXNativeTarget "PullToUpdateDemoTests" */;
-			buildPhases = (
-				CF0C93A81AF11B710035D7A3 /* Sources */,
-				CF0C93A91AF11B710035D7A3 /* Frameworks */,
-				CF0C93AA1AF11B710035D7A3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CF0C93AE1AF11B710035D7A3 /* PBXTargetDependency */,
-			);
-			name = PullToUpdateDemoTests;
-			productName = PullToUpdateDemoTests;
-			productReference = CF0C93AC1AF11B710035D7A3 /* PullToUpdateDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -192,13 +134,9 @@
 					CF0C93961AF11B710035D7A3 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
-					CF0C93AB1AF11B710035D7A3 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = CF0C93961AF11B710035D7A3;
-					};
 				};
 			};
-			buildConfigurationList = CF0C93921AF11B710035D7A3 /* Build configuration list for PBXProject "PullToUpdateDemo" */;
+			buildConfigurationList = CF0C93921AF11B710035D7A3 /* Build configuration list for PBXProject "SwiftNotificationsDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -211,8 +149,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CF0C93961AF11B710035D7A3 /* PullToUpdateDemo */,
-				CF0C93AB1AF11B710035D7A3 /* PullToUpdateDemoTests */,
+				CF0C93961AF11B710035D7A3 /* SwiftNotificationsDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -225,13 +162,6 @@
 				CF0C93A21AF11B710035D7A3 /* Main.storyboard in Resources */,
 				CF0C93A71AF11B710035D7A3 /* LaunchScreen.xib in Resources */,
 				CF0C93A41AF11B710035D7A3 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CF0C93AA1AF11B710035D7A3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,28 +221,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF0C939F1AF11B710035D7A3 /* ViewController.swift in Sources */,
-				CF0C93C11AF122190035D7A3 /* CurrencyItems.swift in Sources */,
+				CF0C93C11AF122190035D7A3 /* StockQuoteItems.swift in Sources */,
 				CF0C939D1AF11B710035D7A3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF0C93A81AF11B710035D7A3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CF0C93B31AF11B710035D7A3 /* PullToUpdateDemoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CF0C93AE1AF11B710035D7A3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CF0C93961AF11B710035D7A3 /* PullToUpdateDemo */;
-			targetProxy = CF0C93AD1AF11B710035D7A3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CF0C93A01AF11B710035D7A3 /* Main.storyboard */ = {
@@ -420,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PullToUpdateDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftNotificationsDemo;
 			};
 			name = Debug;
 		};
@@ -431,48 +345,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PullToUpdateDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		CF0C93BA1AF11B710035D7A3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PullToUpdateDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PullToUpdateDemo.app/PullToUpdateDemo";
-			};
-			name = Debug;
-		};
-		CF0C93BB1AF11B710035D7A3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PullToUpdateDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PullToUpdateDemo.app/PullToUpdateDemo";
+				PRODUCT_NAME = SwiftNotificationsDemo;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CF0C93921AF11B710035D7A3 /* Build configuration list for PBXProject "PullToUpdateDemo" */ = {
+		CF0C93921AF11B710035D7A3 /* Build configuration list for PBXProject "SwiftNotificationsDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CF0C93B41AF11B710035D7A3 /* Debug */,
@@ -481,20 +361,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CF0C93B61AF11B710035D7A3 /* Build configuration list for PBXNativeTarget "PullToUpdateDemo" */ = {
+		CF0C93B61AF11B710035D7A3 /* Build configuration list for PBXNativeTarget "SwiftNotificationsDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CF0C93B71AF11B710035D7A3 /* Debug */,
 				CF0C93B81AF11B710035D7A3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CF0C93B91AF11B710035D7A3 /* Build configuration list for PBXNativeTarget "PullToUpdateDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CF0C93BA1AF11B710035D7A3 /* Debug */,
-				CF0C93BB1AF11B710035D7A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

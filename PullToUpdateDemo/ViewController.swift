@@ -1,6 +1,5 @@
 //
 //  ViewController.swift
-//  PullToUpdateDemo
 //
 //  Created by Christina Moulton on 2015-04-29.
 //  Copyright (c) 2015 Teak Mobile Inc. All rights reserved.
@@ -13,48 +12,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
   var itemsArray:Array<StockQuoteItem>?
   @IBOutlet var tableView: UITableView?
   
-  var refreshControl = UIRefreshControl()
-  var dateFormatter = NSDateFormatter()
-  
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    self.dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
-    self.dateFormatter.timeStyle = NSDateFormatterStyle.LongStyle
-    
-    self.refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
-    self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
-    self.tableView?.addSubview(refreshControl)
-    
-    self.loadStockQuoteItems()
+
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "processNewQuoteItems:", name: QuoteUpdater.updateNotificationName(), object: nil)
+    // create QuoteUpdater to start timer
+    let quoteUpdater = QuoteUpdater()
   }
   
-  func loadStockQuoteItems() {
-    StockQuoteItem.getFeedItems({ (items, error) in
-      if error != nil
-      {
-        var alert = UIAlertController(title: "Error", message: "Could not load stock quotes :( \(error?.localizedDescription)", preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
-        self.presentViewController(alert, animated: true, completion: nil)
-      }
-      self.itemsArray = items
-      
-      // update "last updated" title for refresh control
-      let now = NSDate()
-      let updateString = "Last Updated at " + self.dateFormatter.stringFromDate(now)
-      self.refreshControl.attributedTitle = NSAttributedString(string: updateString)
-      if self.refreshControl.refreshing
-      {
-        self.refreshControl.endRefreshing()
-      }
-      
-      self.tableView?.reloadData()
-    })
-  }
-  
-  func refresh(sender:AnyObject)
+  func processNewQuoteItems(notification: NSNotification?)
   {
-    self.loadStockQuoteItems()
+    if let newQuotes = notification?.object as? Array<StockQuoteItem>
+    {
+      self.itemsArray = newQuotes
+      self.tableView?.reloadData()
+    }
   }
   
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

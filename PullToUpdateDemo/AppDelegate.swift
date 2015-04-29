@@ -1,6 +1,5 @@
 //
 //  AppDelegate.swift
-//  PullToUpdateDemo
 //
 //  Created by Christina Moulton on 2015-04-29.
 //  Copyright (c) 2015 Teak Mobile Inc. All rights reserved.
