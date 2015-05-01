@@ -113,8 +113,6 @@ class QuoteUpdater {
   required init() {
     self.timer = nil // Swift requires values to be set before doing anything else with self in init, so we can't set the target in the next line without this one first
     self.timer = NSTimer.scheduledTimerWithTimeInterval(INTERVAL_SECONDS, target: self, selector: "getUpdatedQuotes:", userInfo: nil, repeats: true)
-    
-    self.getUpdatedQuotes(nil) // do it right away
   }
   
   dynamic func getUpdatedQuotes(timer: NSTimer!) {
