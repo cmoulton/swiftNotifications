@@ -53,7 +53,7 @@
 		CF0C938E1AF11B710035D7A3 = {
 			isa = PBXGroup;
 			children = (
-				CF0C93991AF11B710035D7A3 /* PullToUpdateDemo */,
+				CF0C93991AF11B710035D7A3 /* SwiftNotificationsDemo */,
 				CF0C93981AF11B710035D7A3 /* Products */,
 				F719D6FB9771A8E79B7CAD6E /* Pods */,
 				19693AB17627130A76F403D6 /* Frameworks */,
@@ -68,7 +68,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CF0C93991AF11B710035D7A3 /* PullToUpdateDemo */ = {
+		CF0C93991AF11B710035D7A3 /* SwiftNotificationsDemo */ = {
 			isa = PBXGroup;
 			children = (
 				CF0C939C1AF11B710035D7A3 /* AppDelegate.swift */,
@@ -79,7 +79,7 @@
 				CF0C93A51AF11B710035D7A3 /* LaunchScreen.xib */,
 				CF0C939A1AF11B710035D7A3 /* Supporting Files */,
 			);
-			path = PullToUpdateDemo;
+			path = SwiftNotificationsDemo;
 			sourceTree = "<group>";
 		};
 		CF0C939A1AF11B710035D7A3 /* Supporting Files */ = {
@@ -118,7 +118,7 @@
 			dependencies = (
 			);
 			name = SwiftNotificationsDemo;
-			productName = PullToUpdateDemo;
+			productName = SwiftNotificationsDemo;
 			productReference = CF0C93971AF11B710035D7A3 /* SwiftNotificationsDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -332,7 +332,7 @@
 			baseConfigurationReference = DF0DE2825294FF01C28D80E0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PullToUpdateDemo/Info.plist;
+				INFOPLIST_FILE = SwiftNotificationsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = SwiftNotificationsDemo;
 			};
@@ -343,7 +343,7 @@
 			baseConfigurationReference = B40F9D169E9F27413AA2A3F3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PullToUpdateDemo/Info.plist;
+				INFOPLIST_FILE = SwiftNotificationsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = SwiftNotificationsDemo;
 			};

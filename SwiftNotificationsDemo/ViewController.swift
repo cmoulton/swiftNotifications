@@ -16,8 +16,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     super.viewDidLoad()
 
     NSNotificationCenter.defaultCenter().addObserver(self, selector: "processNewQuoteItems:", name: QuoteUpdater.updateNotificationName(), object: nil)
-    // create QuoteUpdater to start timer
-    let quoteUpdater = QuoteUpdater()
   }
   
   func processNewQuoteItems(notification: NSNotification?)
